@@ -1,0 +1,61 @@
+{
+  "board": {
+    "inner_corners": [
+      9,
+      6
+    ],
+    "square_size_mm": 25.0,
+    "top_left_black": true,
+    "print_size_verified": false
+  },
+  "camera": {
+    "backend": "orbbec",
+    "serial": null,
+    "expected_name": "Gemini 336L",
+    "width": 1280,
+    "height": 720,
+    "fps": 15,
+    "format": "MJPG",
+    "source": null
+  },
+  "robot": {
+    "sdk_path": null,
+    "host": "",
+    "port": 29999,
+    "feedback_port": 30004,
+    "compatibility_verified": false,
+    "feedback_max_age_s": 0.5
+  },
+  "tcp": {
+    "flange_to_tcp_mm_deg": [
+      0,
+      0,
+      174,
+      0,
+      0,
+      0
+    ],
+    "measured_and_verified": false
+  },
+  "motion": {
+    "enabled": false,
+    "speed_mm_s": 5,
+    "max_step_mm": 50,
+    "timeout_s": 30,
+    "workspace_min_mm": [220, -90, -90],
+    "workspace_max_mm": [630, 0, 620],
+    "max_snapshot_age_s": 60
+  },
+  "validation": {
+    "intrinsics_max_rms_px": 1.0,
+    "board_max_rms_px": 1.0,
+    "handeye_translation_rms_mm": 3.0,
+    "handeye_rotation_rms_deg": 1.0,
+    "independent_validation_passed": false
+  },
+  "files": {
+    "intrinsics": "calibrations/intrinsics.json",
+    "handeye": "calibrations/handeye.json",
+    "plane": "calibrations/plane.json"
+  }
+}
